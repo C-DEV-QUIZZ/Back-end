@@ -43,7 +43,7 @@
         $questions = json_decode($json);
 
         // retour des questions au client :
-        $arr = array('chemin' => 'demarrage solo');
+        //$arr = array('chemin' => 'demarrage solo');
         //print_r(json_encode($arr));
         print_r(json_encode($questions));
 
