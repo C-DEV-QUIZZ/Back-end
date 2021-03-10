@@ -1,5 +1,5 @@
 <?php
-
+    include '../class/ClassModelView.class.php';
     $adresseDistante ="https://quizz.servehttp.com/";
     $adresseLocal ="http://127.0.0.1:6969/";
     $route ="questions/modesolo";
@@ -45,7 +45,18 @@
         // retour des questions au client :
         //$arr = array('chemin' => 'demarrage solo');
         //print_r(json_encode($arr));
-        print_r(json_encode($questions));
+
+        //print_r("test");
+
+        $jsonResult = $questions;
+    
+        $arrayQuestionViewModel = array();
+
+        foreach ($jsonResult as $jResult) {
+            array_push($arrayQuestionViewModel, new QuestionViewModel($jResult));
+        }
+
+        print_r( json_encode($arrayQuestionViewModel));
 
     }
     else{    // si on est en mode multi (2) alors on redirige vers le serveur (controller) websocket 

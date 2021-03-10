@@ -8,7 +8,7 @@
     // si on est en mode solo (1) alors on 
     if($modeActif == 1){
 
-        $arr = array('chemin' => 'demarrage-solo');
+        $arr = array('chemin' => 'mode-solo');
         print_r(json_encode($arr));
 
     }
