@@ -1,5 +1,5 @@
 <?php
-$pseudo = 'ian';
+$pseudo = 'flav';
 $sessionId = 17;
 $connexionId = 92;
 
