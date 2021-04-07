@@ -1,7 +1,7 @@
 jQuery(function($){
 
 			// Websocket
-			var websocket_server = new WebSocket("ws://localhost:8080/");
+			var websocket_server = new WebSocket("ws://localhost/");
 
 				websocket_server.onopen = function(e) {
 				websocket_server.send(

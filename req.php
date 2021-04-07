@@ -23,7 +23,7 @@ $req->execute(array(
 
 
 
-		foreach($this->clients as $client)
+		<!-- foreach($this->clients as $client)
 		{
 			$client->send(json_encode(array("type"=>'welcome',"msg"=>$conn->resourceId . ' a deco')));
-		}
+		} -->
